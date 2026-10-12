@@ -1,0 +1,44 @@
+# Python 临时缓存；保留模型、数据与实验结果
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Vivado 运行产物；保留源码、XDC、XPR、XCI、Tcl 与报告
+.Xil/
+*.cache/
+*.runs/
+*.sim/
+*.hw/
+ip_user_files/
+*.gen/
+*.jou
+*.str
+vivado.log
+vivado_*.log
+vivado_*.backup.log
+vivado_*.backup.jou
+
+# MATLAB 自动备份，不忽略 MAT 数据或结果
+*.asv
+
+# 本地秘密和仅本机配置
+.env
+.env.*
+!.env.example
+
+# 编辑器及系统临时文件
+.vs/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+~$*
+
+# 厂家原件若另行放入本地专用目录，不纳入版本管理
+/vendor_originals/
+/local_materials/
+
+# 在项目内建立的独立工作树
+/.worktrees/
